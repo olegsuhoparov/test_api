@@ -1,0 +1,6 @@
+run docker build: docker build -t pytest_runner .
+run docker file: docker run --rm --mount type=bind,src=C:\Projects\pythonProject\test_api,target=/test_project/ pytest_runner
+run docker compose: docker-compose up --build
+
+
+Run allure serve: allure serve results --host localhost --port 51298
